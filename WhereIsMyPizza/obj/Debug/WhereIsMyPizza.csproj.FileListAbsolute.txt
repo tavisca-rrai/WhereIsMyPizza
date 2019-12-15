@@ -1,0 +1,6 @@
+C:\Users\rarai\source\repos\WhereIsMyPizza\WhereIsMyPizza\bin\Debug\WhereIsMyPizza.exe.config
+C:\Users\rarai\source\repos\WhereIsMyPizza\WhereIsMyPizza\bin\Debug\WhereIsMyPizza.exe
+C:\Users\rarai\source\repos\WhereIsMyPizza\WhereIsMyPizza\bin\Debug\WhereIsMyPizza.pdb
+C:\Users\rarai\source\repos\WhereIsMyPizza\WhereIsMyPizza\obj\Debug\WhereIsMyPizza.csprojAssemblyReference.cache
+C:\Users\rarai\source\repos\WhereIsMyPizza\WhereIsMyPizza\obj\Debug\WhereIsMyPizza.exe
+C:\Users\rarai\source\repos\WhereIsMyPizza\WhereIsMyPizza\obj\Debug\WhereIsMyPizza.pdb
