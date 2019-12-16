@@ -14,6 +14,7 @@ namespace WhereIsMyPizza
         {
             Console.WriteLine("Enter The Pizza Number To Select The Corresponding Pizza\n");
             PizzaProvider.DisplayPizzaNameAndPrice();
+            
         }
 
         public static void GetPizza()
@@ -22,7 +23,8 @@ namespace WhereIsMyPizza
             var PizzaName = PizzaProvider.PizzaAndPriceList[pizzaNumber];
 
             Instance = new Pizza(PizzaName);
-            
+            Console.Clear();
+
         }
 
         public static void GetCrust()
@@ -31,14 +33,16 @@ namespace WhereIsMyPizza
             var crustName = PizzaProvider.Crusts[crustNumber];
             Instance.Crust = crustName.Item1;
             Instance.Price += crustName.Item2;
+            Console.Clear();
         }
 
         public static void GetToppings()
         {
             var toppingNumber = int.Parse(Console.ReadLine());
-            var toppingName = PizzaProvider.Crusts[toppingNumber];
-            Instance.Crust = toppingName.Item1;
+            var toppingName = PizzaProvider.Toppings[toppingNumber];
+            Instance.Toppings = toppingName.Item1;
             Instance.Price += toppingName.Item2;
+            Console.Clear();
         }
         public static void GetQuantity()
         {

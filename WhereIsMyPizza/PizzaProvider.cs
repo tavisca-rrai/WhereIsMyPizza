@@ -38,7 +38,7 @@ namespace WhereIsMyPizza
             int toppingsNumber = 0;
             foreach (Tuple<string, int> Topping in Toppings)
             {
-                Console.WriteLine("Topping Number - {$} : ", toppingsNumber++, Topping.Item1 + "Costs {$} Rs", Topping.Item2);
+                Console.WriteLine($"Topping Number - {toppingsNumber++} { Topping.Item1} + Costs {Topping.Item2} Rs" );
             }
         }
         public static void DisplayCrust()
@@ -46,7 +46,7 @@ namespace WhereIsMyPizza
             int crustNumber=0;
             foreach (Tuple<string,int> Crust in Crusts)
             {
-                Console.WriteLine("Crust Number - {$} : ", crustNumber++, Crust.Item1 + "Costs {$} Rs", Crust.Item2);
+                Console.WriteLine($"Crust Number - {crustNumber++} { Crust.Item1} + Costs {Crust.Item2} Rs" );
             }
         }
      
@@ -55,7 +55,7 @@ namespace WhereIsMyPizza
             int pizzaNumber=0;
             foreach(Tuple<string, int> NameAndPrice in PizzaAndPriceList)
             {
-                Console.Write("PizzaNumber-{$}",pizzaNumber++,NameAndPrice.Item1 + "Costs {$} Rs", NameAndPrice.Item2);
+                Console.WriteLine($"PizzaNumber- {pizzaNumber++} {NameAndPrice.Item1} Costs {NameAndPrice.Item2} Rs");
             }
         }
     }

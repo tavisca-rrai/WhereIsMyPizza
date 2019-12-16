@@ -26,6 +26,8 @@ namespace WhereIsMyPizza
             {
                 pizza.display(); 
             }
+            Console.WriteLine("Press Enter To Go Back To Main Menu");
+            Console.ReadLine();
         }
     }
 }

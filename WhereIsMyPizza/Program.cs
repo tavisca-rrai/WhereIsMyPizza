@@ -24,44 +24,50 @@ namespace WhereIsMyPizza
             string inputFromUser = "";
             inputFromUser=Console.ReadLine();
 
-            switch(inputFromUser)
+            while (inputFromUser != "q")
             {
-                case "0" :
-                    MenuManager.DisplayPizza();
-                    MenuManager.GetPizza();
+                switch (inputFromUser)
+                {
+                    case "0":
+                        MenuManager.DisplayPizza();
+                        MenuManager.GetPizza();
 
-                    PizzaProvider.DisplayCrust();
-                    MenuManager.GetCrust();
+                        PizzaProvider.DisplayCrust();
+                        MenuManager.GetCrust();
 
-                    PizzaProvider.DisplayToppings();
-                    MenuManager.GetToppings();
+                        PizzaProvider.DisplayToppings();
+                        MenuManager.GetToppings();
+                        
+                        MenuManager.GetQuantity();
 
-                    var pizza = MenuManager.sendToCart();
-                    MenuManager.clearKitchen();
+                        var pizza = MenuManager.sendToCart();
+                        MenuManager.clearKitchen();
 
-                    CartManager.cart = new Cart();
-                    // Cart cart = new Cart();
-                    CartManager.cart.AddToCart(pizza);
-                    //cart.AddToCart(pizza);
+                        CartManager.cart = new Cart();
+                       
+                        CartManager.cart.AddToCart(pizza);
+
+                        Console.Clear();
+
+                        WelcomeScreen();
 
 
+                        break;
 
-                    
+                    case "1":
+                        //show the cart content 
+                        CartManager.cart.ShowCart();
+                        break;
 
-                    break;
+                    case "2":
+                        break;
 
-                case "1":
-                    //show the cart content 
-                    CartManager.cart.ShowCart();
-                    break;
+                }
 
-                case "2":
-                    break;
-
+                Console.Clear();
+                WelcomeScreen();
+                inputFromUser = Console.ReadLine();
             }
-
-
-
 
         }
     }
